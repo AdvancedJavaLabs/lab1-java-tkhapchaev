@@ -1,32 +1,50 @@
 Times for 10 vertices and 50 connections: 
-Serial: 0
-Parallel: 0
---------
+Serial: 0 ms
+Parallel: 6 ms
+Total: serial algorithm is incomparably faster
+----------------------------------------------------
 Times for 100 vertices and 500 connections: 
-Serial: 0
-Parallel: 0
---------
+Serial: 0 ms
+Parallel: 3 ms
+Total: serial algorithm is incomparably faster
+----------------------------------------------------
 Times for 1000 vertices and 5000 connections: 
-Serial: 1
-Parallel: 0
---------
+Serial: 1 ms
+Parallel: 4 ms
+Total: serial algorithm is 4,00 times faster
+----------------------------------------------------
 Times for 10000 vertices and 50000 connections: 
-Serial: 3
-Parallel: 0
---------
+Serial: 9 ms
+Parallel: 21 ms
+Total: serial algorithm is 2,33 times faster
+----------------------------------------------------
 Times for 10000 vertices and 100000 connections: 
-Serial: 2
-Parallel: 0
---------
+Serial: 8 ms
+Parallel: 16 ms
+Total: serial algorithm is 2,00 times faster
+----------------------------------------------------
 Times for 50000 vertices and 1000000 connections: 
-Serial: 30
-Parallel: 0
---------
+Serial: 46 ms
+Parallel: 42 ms
+Total: parallel algorithm is 1,09 times faster
+----------------------------------------------------
 Times for 100000 vertices and 1000000 connections: 
-Serial: 18
-Parallel: 0
---------
+Serial: 52 ms
+Parallel: 20 ms
+Total: parallel algorithm is 2,60 times faster
+----------------------------------------------------
 Times for 1000000 vertices and 10000000 connections: 
-Serial: 307
-Parallel: 0
---------
+Serial: 864 ms
+Parallel: 182 ms
+Total: parallel algorithm is 4,75 times faster
+----------------------------------------------------
+Times for 2000000 vertices and 10000000 connections: 
+Serial: 1430 ms
+Parallel: 424 ms
+Total: parallel algorithm is 3,37 times faster
+----------------------------------------------------
+Times for 2500000 vertices and 10500000 connections: 
+Serial: 1801 ms
+Parallel: 688 ms
+Total: parallel algorithm is 2,62 times faster
+----------------------------------------------------
