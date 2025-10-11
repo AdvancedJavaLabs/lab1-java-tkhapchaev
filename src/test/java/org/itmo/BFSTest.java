@@ -5,14 +5,9 @@ import org.junit.jupiter.api.Test;
 
 import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.Buffer;
-import java.util.HashSet;
 import java.util.Random;
-import java.util.function.BiFunction;
-import java.util.stream.IntStream;
 
 public class BFSTest {
-
     @Test
     public void bfsTest() throws IOException {
         int[] sizes = new int[]{10, 100, 1000, 10_000, 10_000, 50_000, 100_000, 1_000_000, 2_000_000, 2_500_000};
@@ -34,8 +29,8 @@ public class BFSTest {
                     Assertions.assertEquals(true, g.visitedSerial[j]);
                 }
 
-                for (int j = 0; j < g.visitedParallel.length; j++) {
-                    Assertions.assertEquals(true, g.visitedParallel[j].get());
+                for (int j = 0; j < g.visitedParallel.length(); j++) {
+                    Assertions.assertEquals(1, g.visitedParallel.get(j));
                 }
 
                 String winner = serialTime > parallelTime ? "parallel algorithm" : "serial algorithm";
